@@ -3,3 +3,42 @@
 body {
     font-family: 'Roboto Mono', sans-serif;
 }
+
+/* Footer Styling */ 
+
+footer {
+    width: 100%;
+    bottom: 0;
+    position:absolute;
+    background-color: #3a3a3a;
+    margin: 0;
+    padding: 0;
+}
+footer a {
+    color: #fff;
+    margin-top: auto;
+}
+
+footer a:hover {
+    color: black;
+}
+
+.social-networks {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #3a3a3a;
+    justify-content: center;
+}
+
+.social-networks ul {
+    display: flex;
+    align-items: center;
+}
+
+.social-networks li {
+    font-size: 160%;
+    padding: 10px;
+    color: #fff;
+    list-style-type: none;
+}

@@ -4,6 +4,8 @@ body {
     font-family: 'Roboto Mono', sans-serif;
 }
 
+/* Styling for Index Page */
+
 /* Heading Styling */ 
 
 h1 {
@@ -42,6 +44,46 @@ h1 {
         transform: scale(1.1);
     }
 }
+
+.container-username {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: large;
+    padding: 10px;
+    justify-content: space-around;
+}
+#username {
+    border-radius: 4px;
+}
+
+.container-play-btn {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.btn {
+    font-size: larger;
+    padding: 2rem 0;
+    width: 25rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 4px;
+    background: black;
+}
+
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0 1.5rem 0 green;
+    transition: transform 150ms;
+    transform: scale(1.04);
+}
+
+
+
 /* Footer Styling */ 
 
 footer {

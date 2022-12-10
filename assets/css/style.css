@@ -100,7 +100,7 @@ h1 {
 }
 
 .hidden {
-    display: non;
+    display: none;
 }
 
 #question-area {

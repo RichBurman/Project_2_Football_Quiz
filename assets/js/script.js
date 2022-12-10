@@ -101,9 +101,17 @@ function next () {
 
 nextBtn.onclick =() => {
     next();
+    removeColors();
     };
 
+// Remove colors//
 
+function removeColors() {
+    if (selectedAnswer) {
+        selectedAnswer.classList.remove('correct-answer');
+        selectedAnswer.classList.remove('wrong-answer');
+    }
+}
 // Questions //
 
 const displayQuestions = [ {

@@ -121,6 +121,15 @@ text-align: center;
     margin: 10px;
 }
 
+/* Answer Styling */
+
+.wrong-answer {
+    background-color: red;
+}
+
+.correct-answer {
+    background-color: green;
+}
 
 /* Footer Styling */ 
 

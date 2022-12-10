@@ -47,5 +47,28 @@ function startQuiz () {
     userNameDisplay.classList.add('hidden');
     heroImage.classList.add('hidden');
     mainContainer.classList.remove('hidden');
-
 };
+
+// Questions //
+
+const displayQuestions = [ {
+    question: "Which team plays in Manchester",
+    answers :[
+        {answer: 'Chelsea'},
+        {answer: 'Tottenham'},
+        {answer: 'Manchester United'},
+        {answer: 'Arsenal'},
+    ],
+    correctAnswer: "Manchester United"
+},
+{
+    question: "Which team plays in Manchester",
+    answers :[
+        {answer: 'Chelsea'},
+        {answer: 'Tottenham'},
+        {answer: 'Manchester United'},
+        {answer: 'Arsenal'},
+    ],
+    correctAnswer: "Manchester United"
+}];
+

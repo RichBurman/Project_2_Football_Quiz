@@ -15,6 +15,7 @@ let option1 = document.getElementById('answer-1');
 let option2 = document.getElementById('answer-2');
 let option3 = document.getElementById('answer-3');
 let option4 = document.getElementById('answer-4');
+let nextBtn = document.getElementById('next-button');
 
 let currentQuestion = 0;
 let questionNumber = 1;
@@ -84,6 +85,25 @@ function calculateCorrectAnswer(event) {
     startQuiz();
 }
 
+function next () {
+    currentQuestion++;
+    questionNumber++;
+    if (currentQuestion <= '9') {
+        questionCount.innerText = questionNumber;
+    } else {
+
+        return (currentQuestion);
+    }
+
+    getNewQuestion(displayQuestions[currentQuestion]);
+    count = 10;
+}
+
+nextBtn.onclick =() => {
+    next();
+    };
+
+
 // Questions //
 
 const displayQuestions = [ {
@@ -97,7 +117,7 @@ const displayQuestions = [ {
     correctAnswer: "Manchester United"
 },
 
-{ question: "Which team plays in Manchester",
+{ question: "Pink",
 answers :[
     {answer: 'Chelsea'},
     {answer: 'Tottenham'},
@@ -107,7 +127,7 @@ answers :[
 correctAnswer: "Manchester United"
 },
 
-{ question: "Which team plays in Manchester",
+{ question: "Yellow",
 answers :[
     {answer: 'Chelsea'},
     {answer: 'Tottenham'},
@@ -117,7 +137,7 @@ answers :[
 correctAnswer: "Manchester United"
 },
 
-{ question: "Which team plays in Manchester",
+{ question: "Orange",
 answers :[
     {answer: 'Chelsea'},
     {answer: 'Tottenham'},
@@ -127,7 +147,7 @@ answers :[
 correctAnswer: "Manchester United"
 },
 
-{ question: "Which team plays in Manchester",
+{ question: "Red",
 answers :[
     {answer: 'Chelsea'},
     {answer: 'Tottenham'},
@@ -137,7 +157,7 @@ answers :[
 correctAnswer: "Manchester United"
 },
 
-{ question: "Which team plays in Manchester",
+{ question: "Black",
 answers :[
     {answer: 'Chelsea'},
     {answer: 'Tottenham'},
@@ -147,7 +167,7 @@ answers :[
 correctAnswer: "Manchester United"
 },
 
-{ question: "Which team plays in Manchester",
+{ question: "Green",
 answers :[
     {answer: 'Chelsea'},
     {answer: 'Tottenham'},
@@ -157,7 +177,7 @@ answers :[
 correctAnswer: "Manchester United"
 },
 
-{ question: "Which team plays in Manchester",
+{ question: "Red",
 answers :[
     {answer: 'Chelsea'},
     {answer: 'Tottenham'},
@@ -168,7 +188,7 @@ correctAnswer: "Manchester United"
 },
 
 {
-    question: "Which team plays in Manchester",
+    question: "Blue",
     answers :[
         {answer: 'Chelsea'},
         {answer: 'Tottenham'},

@@ -82,6 +82,44 @@ h1 {
     transform: scale(1.04);
 }
 
+/*Quiz Area */
+
+#main-container {
+    background-color: red;
+    padding: 25px;
+}
+
+.hidden {
+    display: non;
+}
+
+#question-area {
+font-size: 40px;
+height: 100px;
+text-align: center;
+} 
+
+#question-num {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#answer-area{
+    font-size: 40px;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+#answer-btn {
+    font-size: 25px;
+    padding: 10px;
+    width: 20%;
+    margin: 10px;
+}
 
 
 /* Footer Styling */ 

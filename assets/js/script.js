@@ -9,6 +9,8 @@ let showQuestion = document.getElementById('question-area');
 let userNameDisplay = document.getElementById('username-display')
 let heroImage = document.getElementById('hero-outer');
 
+let questionCount = document.getElementById('question-num')
+
 let option1 = document.getElementById('answer-1');
 let option2 = document.getElementById('answer-2');
 let option3 = document.getElementById('answer-3');
@@ -47,6 +49,7 @@ function startQuiz () {
     userNameDisplay.classList.add('hidden');
     heroImage.classList.add('hidden');
     mainContainer.classList.remove('hidden');
+    questionCount.innerText = questionNumber;
 
     getNewQuestion(displayQuestions[currentQuestion]);
 };

@@ -19,39 +19,22 @@ let selectedAnswer;
 //username //
 
 let user = userName;
-let messageBlank = "*** Please enter a name***";
+let messageBlank = "*** Please enter a valid name with no spaces or numbers ***";
+let messageShort = "*** Name must be longer than 3 Characters ***"
 
 function validation () {
-   var a = user.value;
-   if (a =="") {
+   let characters = /^[A-Za-z]+$/;
+   if (!user.value.match(characters)) {
     message.innerHTML = messageBlank;
     return false
+   } else if (user.value.length <= Number(3)) {
+    message.innerHTML = messageShort;
+    return false
+   } else if (user.value.length >= Number(3)) {
+    startQuiz();
    }
 };
 
 playButton.onclick =() => {
     validation();
 };
-
-// Questions //
-
-const quizQuestions = [{
-    question:"What football club plays at Old Trafford?",
-    answers: [
-        {option: "Manchester United"},
-        {option: "Liverpool"},
-        {option: "Chelsea"},
-        {option: "Arsenal"},
-    ],
-    correctAnswer: "Manchester United"
-},
-{
-    question:"What football club does Neymar play for?",
-    answers: [
-        {option: "PSG"},
-        {option: "Liverpool"},
-        {option: "Chelsea"},
-        {option: "Arsenal"},
-    ],
-    correctAnswer: "PSG"
-}];

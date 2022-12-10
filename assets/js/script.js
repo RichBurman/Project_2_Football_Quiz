@@ -53,16 +53,32 @@ function startQuiz () {
 
 
 function getNewQuestion (question) {
-    showQuestion.innerHTML = question.question;
-    option1.innerHTML = question.answers[0].answer;
-    option2.innerHTML = question.answers[1].answer;
-    option3.innerHTML = question.answers[2].answer;
-    option4.innerHTML = question.answers[3].answer;
+    showQuestion.innerText = question.question;
+    option1.innerText = question.answers[0].answer;
+    option2.innerText = question.answers[1].answer;
+    option3.innerText = question.answers[2].answer;
+    option4.innerText = question.answers[3].answer;
 
-    option1.onclick = chosenAnswer;
-    option2.onclick = chosenAnswer;
-    option3.onclick = chosenAnswer;
-    option4.onclick = chosenAnswer;
+    option1.onclick = calculateCorrectAnswer;
+    option2.onclick = calculateCorrectAnswer;
+    option3.onclick = calculateCorrectAnswer;
+    option4.onclick = calculateCorrectAnswer;
+}
+
+function calculateCorrectAnswer(event) {
+    selectedAnswer = event.target;
+    let userAnswer = selectedAnswer.innerText;
+    let rightAnswer = displayQuestions[currentQuestion].correctAnswer;
+
+    if (userAnswer === rightAnswer) {
+        getNewQuestion(displayQuestions[currentQuestion])
+        selectedAnswer.classList.add('correct-answer');
+    } else {
+        getNewQuestion(displayQuestions[currentQuestion])
+        selectedAnswer.classList.add('wrong-answer');
+    }
+
+    startQuiz();
 }
 
 // Questions //

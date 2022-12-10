@@ -47,7 +47,23 @@ function startQuiz () {
     userNameDisplay.classList.add('hidden');
     heroImage.classList.add('hidden');
     mainContainer.classList.remove('hidden');
+
+    getNewQuestion(displayQuestions[currentQuestion]);
 };
+
+
+function getNewQuestion (question) {
+    showQuestion.innerHTML = question.question;
+    option1.innerHTML = question.answers[0].answer;
+    option2.innerHTML = question.answers[1].answer;
+    option3.innerHTML = question.answers[2].answer;
+    option4.innerHTML = question.answers[3].answer;
+
+    option1.onclick = chosenAnswer;
+    option2.onclick = chosenAnswer;
+    option3.onclick = chosenAnswer;
+    option4.onclick = chosenAnswer;
+}
 
 // Questions //
 
@@ -61,6 +77,77 @@ const displayQuestions = [ {
     ],
     correctAnswer: "Manchester United"
 },
+
+{ question: "Which team plays in Manchester",
+answers :[
+    {answer: 'Chelsea'},
+    {answer: 'Tottenham'},
+    {answer: 'Manchester United'},
+    {answer: 'Arsenal'},
+],
+correctAnswer: "Manchester United"
+},
+
+{ question: "Which team plays in Manchester",
+answers :[
+    {answer: 'Chelsea'},
+    {answer: 'Tottenham'},
+    {answer: 'Manchester United'},
+    {answer: 'Arsenal'},
+],
+correctAnswer: "Manchester United"
+},
+
+{ question: "Which team plays in Manchester",
+answers :[
+    {answer: 'Chelsea'},
+    {answer: 'Tottenham'},
+    {answer: 'Manchester United'},
+    {answer: 'Arsenal'},
+],
+correctAnswer: "Manchester United"
+},
+
+{ question: "Which team plays in Manchester",
+answers :[
+    {answer: 'Chelsea'},
+    {answer: 'Tottenham'},
+    {answer: 'Manchester United'},
+    {answer: 'Arsenal'},
+],
+correctAnswer: "Manchester United"
+},
+
+{ question: "Which team plays in Manchester",
+answers :[
+    {answer: 'Chelsea'},
+    {answer: 'Tottenham'},
+    {answer: 'Manchester United'},
+    {answer: 'Arsenal'},
+],
+correctAnswer: "Manchester United"
+},
+
+{ question: "Which team plays in Manchester",
+answers :[
+    {answer: 'Chelsea'},
+    {answer: 'Tottenham'},
+    {answer: 'Manchester United'},
+    {answer: 'Arsenal'},
+],
+correctAnswer: "Manchester United"
+},
+
+{ question: "Which team plays in Manchester",
+answers :[
+    {answer: 'Chelsea'},
+    {answer: 'Tottenham'},
+    {answer: 'Manchester United'},
+    {answer: 'Arsenal'},
+],
+correctAnswer: "Manchester United"
+},
+
 {
     question: "Which team plays in Manchester",
     answers :[

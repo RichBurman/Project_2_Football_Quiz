@@ -124,7 +124,7 @@ text-align: center;
     align-content: center;
 }
 
-#answer-btn {
+.answer-btn {
     font-size: 25px;
     padding: 10px;
     width: 20%;

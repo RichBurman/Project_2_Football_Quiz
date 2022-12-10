@@ -70,10 +70,11 @@ function getNewQuestion (question) {
 }
 
 function calculateCorrectAnswer(event) {
+   
     selectedAnswer = event.target;
     let userAnswer = selectedAnswer.innerText;
     let rightAnswer = displayQuestions[currentQuestion].correctAnswer;
-
+    console.log('you selected', displayQuestions[currentQuestion])
     if (userAnswer === rightAnswer) {
         getNewQuestion(displayQuestions[currentQuestion])
         incrementScore();

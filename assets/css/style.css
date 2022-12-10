@@ -4,6 +4,11 @@ body {
     font-family: 'Roboto Mono', sans-serif;
 }
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
 /* Styling for Index Page */
 
 /* Heading Styling */ 
@@ -144,12 +149,7 @@ text-align: center;
 /* Footer Styling */ 
 
 footer {
-    width: 100%;
-    bottom: 0;
-    position:absolute;
     background-color: #3a3a3a;
-    margin: 0;
-    padding: 0;
 }
 footer a {
     color: #fff;

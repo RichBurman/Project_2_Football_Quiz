@@ -76,10 +76,12 @@ function calculateCorrectAnswer(event) {
 
     if (userAnswer === rightAnswer) {
         getNewQuestion(displayQuestions[currentQuestion])
+        incrementScore();
         selectedAnswer.classList.add('correct-answer');
     } else {
         getNewQuestion(displayQuestions[currentQuestion])
         selectedAnswer.classList.add('wrong-answer');
+        incrementWrongAnswer();
     }
 
     startQuiz();
@@ -112,6 +114,17 @@ function removeColors() {
         selectedAnswer.classList.remove('wrong-answer');
     }
 }
+
+function incrementScore() {
+    let oldScore = parseInt(document.getElementById('score').innerText);
+    document.getElementById('score').innerText = ++oldScore;
+}
+
+function incrementWrongAnswer() {
+    let oldScore = parseInt(document.getElementById('incorrect').innerText);
+    document.getElementById('incorrect').innerText = ++oldScore;
+}
+
 // Questions //
 
 const displayQuestions = [ {

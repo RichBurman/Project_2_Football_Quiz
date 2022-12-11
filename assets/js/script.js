@@ -74,6 +74,7 @@ function calculateCorrectAnswer(event) {
     selectedAnswer = event.target;
     let userAnswer = selectedAnswer.innerText;
     let rightAnswer = displayQuestions[currentQuestion].correctAnswer;
+
     console.log('you selected', displayQuestions[currentQuestion])
     if (userAnswer === rightAnswer) {
         getNewQuestion(displayQuestions[currentQuestion])
@@ -91,15 +92,17 @@ function calculateCorrectAnswer(event) {
 function next () {
     currentQuestion++;
     questionNumber++;
-    if (currentQuestion <= '9') {
+    if (currentQuestion <= '8') {
         questionCount.innerText = questionNumber;
     } else {
+        alert('You have completed the Quiz. Please see your correct and incorrect answers on the screen!')
 
         return (currentQuestion);
+
     }
 
     getNewQuestion(displayQuestions[currentQuestion]);
-    count = 10;
+    count = 8;
 }
 
 nextBtn.onclick =() => {
@@ -136,7 +139,8 @@ const displayQuestions = [ {
         {answer: 'Manchester United'},
         {answer: 'Arsenal'},
     ],
-    correctAnswer: "Manchester United"
+    correctAnswer: "Manchester United",
+    incorrectAnswers: ["Chelsea", "Tottenham", "Arsenal"]
 },
 
 { question: "Pink",
@@ -146,7 +150,8 @@ answers :[
     {answer: 'Manchester United'},
     {answer: 'Arsenal'},
 ],
-correctAnswer: "Manchester United"
+    correctAnswer: "Manchester United",
+    incorrectAnswers: ["Chelsea", "Tottenham", "Arsenal"]
 },
 
 { question: "Yellow",
@@ -156,7 +161,8 @@ answers :[
     {answer: 'Manchester United'},
     {answer: 'Arsenal'},
 ],
-correctAnswer: "Manchester United"
+    correctAnswer: "Manchester United",
+    incorrectAnswers: ["Chelsea", "Tottenham", "Arsenal"]
 },
 
 { question: "Orange",
@@ -166,7 +172,8 @@ answers :[
     {answer: 'Manchester United'},
     {answer: 'Arsenal'},
 ],
-correctAnswer: "Manchester United"
+    correctAnswer: "Manchester United",
+    incorrectAnswers: ["Chelsea", "Tottenham", "Arsenal"]
 },
 
 { question: "Red",
@@ -176,7 +183,8 @@ answers :[
     {answer: 'Manchester United'},
     {answer: 'Arsenal'},
 ],
-correctAnswer: "Manchester United"
+    correctAnswer: "Manchester United",
+    incorrectAnswers: ["Chelsea", "Tottenham", "Arsenal"]
 },
 
 { question: "Black",
@@ -186,7 +194,8 @@ answers :[
     {answer: 'Manchester United'},
     {answer: 'Arsenal'},
 ],
-correctAnswer: "Manchester United"
+    correctAnswer: "Manchester United",
+    incorrectAnswers: ["Chelsea", "Tottenham", "Arsenal"]
 },
 
 { question: "Green",
@@ -196,7 +205,8 @@ answers :[
     {answer: 'Manchester United'},
     {answer: 'Arsenal'},
 ],
-correctAnswer: "Manchester United"
+    correctAnswer: "Manchester United",
+    incorrectAnswers: ["Chelsea", "Tottenham", "Arsenal"]
 },
 
 { question: "Red",
@@ -206,17 +216,19 @@ answers :[
     {answer: 'Manchester United'},
     {answer: 'Arsenal'},
 ],
-correctAnswer: "Manchester United"
+    correctAnswer: "Manchester United",
+    incorrectAnswers: ["Chelsea", "Tottenham", "Arsenal"]
 },
 
 {
-    question: "Blue",
+    question: "Last",
     answers :[
         {answer: 'Chelsea'},
         {answer: 'Tottenham'},
         {answer: 'Manchester United'},
         {answer: 'Arsenal'},
     ],
-    correctAnswer: "Manchester United"
+    correctAnswer: "Manchester United",
+    incorrectAnswers: ["Chelsea", "Tottenham", "Arsenal"]
 }];
 

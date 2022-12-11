@@ -17,6 +17,7 @@ let option3 = document.getElementById('answer-3');
 let option4 = document.getElementById('answer-4');
 let nextBtn = document.getElementById('next-button');
 
+
 let currentQuestion = 0;
 let questionNumber = 1;
 let selectedAnswer;
@@ -74,6 +75,7 @@ function calculateCorrectAnswer(event) {
     selectedAnswer = event.target;
     let userAnswer = selectedAnswer.innerText;
     let rightAnswer = displayQuestions[currentQuestion].correctAnswer;
+    
 
     console.log('you selected', displayQuestions[currentQuestion])
     if (userAnswer === rightAnswer) {
@@ -94,21 +96,18 @@ function next () {
     questionNumber++;
     if (currentQuestion <= '8') {
         questionCount.innerText = questionNumber;
+        getNewQuestion(displayQuestions[currentQuestion]);
+        count = 8;
     } else {
         alert('You have completed the Quiz. Please see your correct and incorrect answers on the screen!')
-
-        return (currentQuestion);
-
     }
-
-    getNewQuestion(displayQuestions[currentQuestion]);
-    count = 8;
 }
 
 nextBtn.onclick =() => {
     next();
     removeColors();
     };
+
 
 // Remove colors//
 
@@ -143,92 +142,97 @@ const displayQuestions = [ {
     incorrectAnswers: ["Chelsea", "Tottenham", "Arsenal"]
 },
 
-{ question: "Pink",
-answers :[
+{ 
+    question: "What team plays in blue?",
+    answers :[
     {answer: 'Chelsea'},
     {answer: 'Tottenham'},
     {answer: 'Manchester United'},
     {answer: 'Arsenal'},
 ],
-    correctAnswer: "Manchester United",
-    incorrectAnswers: ["Chelsea", "Tottenham", "Arsenal"]
+    correctAnswer: "Chelsea",
+    incorrectAnswers: ["Manchester United", "Tottenham", "Arsenal"]
 },
 
-{ question: "Yellow",
-answers :[
+{ 
+    question: "What team plays in white?",
+    answers :[
     {answer: 'Chelsea'},
     {answer: 'Tottenham'},
     {answer: 'Manchester United'},
     {answer: 'Arsenal'},
 ],
-    correctAnswer: "Manchester United",
-    incorrectAnswers: ["Chelsea", "Tottenham", "Arsenal"]
+    correctAnswer: "Tottenham",
+    incorrectAnswers: ["Chelsea", "Manchester United", "Arsenal"]
 },
 
-{ question: "Orange",
-answers :[
+{ question: "Which team are nicknamed the Gunners?",
+    answers :[
     {answer: 'Chelsea'},
     {answer: 'Tottenham'},
     {answer: 'Manchester United'},
     {answer: 'Arsenal'},
 ],
-    correctAnswer: "Manchester United",
-    incorrectAnswers: ["Chelsea", "Tottenham", "Arsenal"]
+    correctAnswer: "Arsenal",
+    incorrectAnswers: ["Chelsea", "Tottenham", "Manchester United"]
 },
 
-{ question: "Red",
-answers :[
-    {answer: 'Chelsea'},
+{ 
+    question: "Which team plays at Anfield",
+    answers :[
+    {answer: 'Liverpool'},
     {answer: 'Tottenham'},
     {answer: 'Manchester United'},
     {answer: 'Arsenal'},
 ],
-    correctAnswer: "Manchester United",
-    incorrectAnswers: ["Chelsea", "Tottenham", "Arsenal"]
+    correctAnswer: "Liverpool",
+    incorrectAnswers: ["Manchester United", "Tottenham", "Arsenal"]
 },
 
-{ question: "Black",
-answers :[
+{ question: "Which team plays in red and white?",
+    answers :[
     {answer: 'Chelsea'},
     {answer: 'Tottenham'},
-    {answer: 'Manchester United'},
-    {answer: 'Arsenal'},
+    {answer: 'Southampton'},
+    {answer: 'Newcastle'},
 ],
-    correctAnswer: "Manchester United",
-    incorrectAnswers: ["Chelsea", "Tottenham", "Arsenal"]
+    correctAnswer: "Southampton",
+    incorrectAnswers: ["Chelsea", "Tottenham", "Newcastle"]
 },
 
-{ question: "Green",
-answers :[
+{ 
+    question: "Which teams plays at Stamford Bridge",
+    answers :[
     {answer: 'Chelsea'},
     {answer: 'Tottenham'},
     {answer: 'Manchester United'},
     {answer: 'Arsenal'},
 ],
-    correctAnswer: "Manchester United",
-    incorrectAnswers: ["Chelsea", "Tottenham", "Arsenal"]
+    correctAnswer: "Chelsea",
+    incorrectAnswers: ["Manchester United", "Tottenham", "Arsenal"]
 },
 
-{ question: "Red",
-answers :[
-    {answer: 'Chelsea'},
+{ 
+    question: "Which team isn't in the Premier League?",
+    answers :[
+    {answer: 'Margate'},
     {answer: 'Tottenham'},
     {answer: 'Manchester United'},
     {answer: 'Arsenal'},
 ],
-    correctAnswer: "Manchester United",
-    incorrectAnswers: ["Chelsea", "Tottenham", "Arsenal"]
+    correctAnswer: "Margate",
+    incorrectAnswers: ["Manchester United", "Tottenham", "Arsenal"]
 },
 
 {
-    question: "Last",
+    question: "Which team plays in blue?",
     answers :[
         {answer: 'Chelsea'},
         {answer: 'Tottenham'},
         {answer: 'Manchester United'},
         {answer: 'Arsenal'},
     ],
-    correctAnswer: "Manchester United",
-    incorrectAnswers: ["Chelsea", "Tottenham", "Arsenal"]
+    correctAnswer: "Chelsea",
+    incorrectAnswers: ["Manchester United", "Tottenham", "Arsenal"]
 }];
 

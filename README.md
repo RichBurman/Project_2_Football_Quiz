@@ -47,8 +47,13 @@ The Football Quiz website is for people who wish to take part in a fun football 
 
 - Possible Future Features to Implement
 
-    - 
-    - 
+    - New question to appear after the previous question has been answered. This would allow the next button to be removed and allows for easier navigation of the website for the User
+    - Once the user has selected an answer, the correct answer to show green, even if the user has selected the wrong answer. This would inform the User of the correct answer. 
+    - Improved styling of the website. The website has basic styling and could be improved with images and further css styling to enhance the overall look of the website. 
+    - A high score page. This would take the user name (which was inputted before starting the Quiz) and place their score out of 10 on a leader board. 
+    - Additional Question pool. A pool of questions, where the website could randonly select questions to use in the quiz, so each time the user starts the quiz, they will face a different order of questions. This would allow the user to come back to the quiz and face different questions each time for a new challenge. 
+    - Disabling the answer buttons after an answer has been selected. This would prevent the user from selecting multiple answers on a question. 
+    - Restart/Play Again button. This would be a button or option to appear at the end of the quiz to allow the User to return the start of the quiz questions again and have another attempt of completing the quiz. 
 
 
 ## Testing
@@ -59,15 +64,7 @@ The Football Quiz website is for people who wish to take part in a fun football 
 
 - index.html 
 
-![Image of no errors](assets/images/README/Doc_noerrors_html.jpg)
-
-- games.html
-
-![Image of no errors](assets/images/README/Doc_noerrors_html.jpg)
-
-- signup.html 
-
-![Image of no errors](assets/images/README/Doc_noerrors_html.jpg)
+![Image of no errors](assets/images/README/html_valid.jpg)
 
 ### CSS
 
@@ -75,7 +72,22 @@ The Football Quiz website is for people who wish to take part in a fun football 
 
 - style.css
 
-![Image of no errors](assets/images/README/css_noerrors.jpg)
+![Image of no errors](assets/images/README/css_valid.jpg)
+
+### JavaScript
+
+- No key errors were returned when passing through the [JShint](https://jshint.com/)
+
+- 27 warnings of 3 types were found 
+    - 	'let' is available in ES6 (use 'esversion: 6') or Mozilla JS    
+         extensions (use moz).
+    -   'arrow function syntax (=>)' is only available in ES6 (use 
+         'esversion: 6').
+    -   'const' is available in ES6 (use 'esversion: 6') or Mozilla JS  extensions (use moz).
+
+-script.js
+
+![Image of no errors](assets/images/README/jshint_valid.jpg)
 
 ### Responsive
 
@@ -83,34 +95,27 @@ The Football Quiz website is for people who wish to take part in a fun football 
 
 - Website tested using Chrome devtools on various screen sizes. 
 - Media Queries were added to the CSS Stylesheet:
-    - For larger to medium screens size from 1200px wide and down
     - Medium screen sizes from 950px wide and down
 
 ### Lighthouse
 
 - Website tested on lighthouse
-    - Perfomance 53
-    - Accessibility 97
+    - Perfomance 74
+    - Accessibility 100
     - Best Practices 92
-    - SEO 93
+    - SEO 100
 
-![Lighthouse score](assets/images/README/lighthouse_test.jpg)
-
-To improve this, I used [Optimizilla](https://imagecompressor.com/) to reduce the size of the images on the website. After compressing all of the images, I performed the lighthouse test again which returned an huge improvement on the performance score without affecting images quality on the site. 
-
-- After compressing images - Website tested on lighthouse 
-    - Perfomance 53
-    - Accessibility 97
-    - Best Practices 92
-    - SEO 93
-
-![Lighthouse score](assets/images/README/New_Performance_Compressed.jpg)
+![Lighthouse score](assets/images/README/Lighthouse_Project2.jpg)
 
 ### Unfixed Bugs
 
-- The flexbox css styling on the Games page does not line up all the images as neatly as I would like. This is something I would want to work on and improve in the future. 
-
 - Images that are used on the site are rather large in size and they could be adjusted to allow for faster loading times on those with a slower internet connection
+
+- Disabling the answer buttons after an answer has been selected. The user can select another answer after selecting their first answer this adds to the correct or incorrect scores, which would result in incorrect scoring for the quiz. 
+
+- The correct answer displaying green, to show the user the correct answer after they have selected an incorrect answer. 
+
+- The questions
 
 ## Deployment
 
@@ -119,13 +124,14 @@ To improve this, I used [Optimizilla](https://imagecompressor.com/) to reduce th
     - Click on Pages
     - Select main branch and GitHub builds site from main branch
 
-The live link is here - https://richburman.github.io/Project-1/
+The live link is here - https://richburman.github.io/Project_2_Football_Quiz/
 
 ## Credits
 
 ### Contents
 
-- Research using [w3schools](https://www.w3schools.com/css/css3_flexbox.asp) to learn about how to use flexbox
+- Research using [w3schools](https://www.w3schools.com/css/css3_flexbox.asp) to learn about how to use flexbox and to learn further about JavaScript functions and coding. 
+
 - The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
 - The fonts were taken from [Google Fonts](https://fonts.google.com/)
 - The football teams used in the website are members of the [Premier League](https://www.premierleague.com/)
@@ -133,18 +139,18 @@ The live link is here - https://richburman.github.io/Project-1/
     - [Arsenal FC](https://www.arsenal.com/)
     - [Chelsea FC](https://www.chelseafc.com/en)
     - [Manchester City FC](https://www.mancity.com/)
-    - [Tottenham Hotspur FC](https://www.tottenhamhotspur.com/)
-- Information take from [Web.Dev](https://web.dev/serve-images-with-correct-dimensions/#the-good-approach) to reduce images size to improve loading performance speeds. After reading this webite I added 'aspect-ratio= 16/9' to my imgs to help improve performance speeds on lighthouse score. 
+    - [Liverpool FC](https://www.liverpoolfc.com/)
+
 
 
 ### Media
 
 - All images were taken from [Unsplash](https://unsplash.com/)
-- All images were compressed using [Optimizilla](https://imagecompressor.com/) to aid website performance.
 - Screenshots taken from the following website for this README
     - [Lighthouse](https://web.dev/measure/)
     - [Jigsaw validator](https://jigsaw.w3.org/css-validator/)
     - [W3C validator](https://validator.w3.org/)
+    - [JSHint validator](https://jshint.com/)
     - [Am I Responsive?](https://amiresponsive.co.uk/)
 
 ## Acknowledgements

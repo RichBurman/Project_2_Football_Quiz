@@ -8,6 +8,8 @@ The Football Quiz website is for people who wish to take part in a fun football 
 
 ## Features
 
+![Image of index page](assets/images/README/index_page.jpg)
+
 - The landing page and hero image
     - The landing includes a hero image and header which allows the user to see what the website is about. The image includes an animation which should draw the user into the page, whilst the header details clearly what the website is about. 
 
@@ -17,16 +19,19 @@ The Football Quiz website is for people who wish to take part in a fun football 
     - Users are only able to submit a name that is made up only of 'A-Z' or 'a-z' characters otherwise the following message will pop up on the screen "Please enter a valid name with no spaces or numbers" and not allow the name to be accepted until it meets the requirements.  
     - Users are not able to submit a name that is under 3 characters in length as the following message will pop up on the screen "Name must be longer than 3 Characters" and not allow the name to be accepted until it meets the requirements.  
     - Once a user has entered a name that meets the requirements, it is accepted and the User is taken to the Quiz questions. 
+    This checks for validation of the username to ensure the correct information is entered into the website. 
 
 
 - Click to Play! Button
     - The Click to Play! button allows the user to submit their name. If all the requirements of the Username Entry are met, clicking this button will take the user to the question area where they will be able to take part in the Quiz. 
 
 
+
 - The Quiz
     - This is where the questions are displayed. Each questions loads 1 at a time and provides 4 answers (which are clickable buttons) for the user to click on to select their answer. 
     - Once the user clicks on a answer, if the answer is correct the box will turn green. However, if the user has clicked on a wrong answer, the answer box will turn red. 
     - The user will click on the 'next question' button to bring the next question for the user to answer. 
+
 
 
 - Correct and Incorrect Score
@@ -37,10 +42,14 @@ The Football Quiz website is for people who wish to take part in a fun football 
     - The footer includes links to all of the social media sites for the Football Quiz. 
     - The footer allows the user further access to the Football Quiz through their social media sites. 
 
+    ![Image of Quiz Page](assets/images/README/quiz_page.jpg)
+
 
 - Message box
     - Once all 10 questions have been answered by the User, the message box displays to inform the User the following 'You have completed the Quiz. Please see your correct and incorrect answers on the screen!.' 
     - This informs the user that the Quiz has been completed and no more questions are available for the user to answer. 
+
+    ![Image of Message](assets/images/README/message.jpg)
 
     
 
@@ -113,9 +122,8 @@ The Football Quiz website is for people who wish to take part in a fun football 
 
 - Disabling the answer buttons after an answer has been selected. The user can select another answer after selecting their first answer this adds to the correct or incorrect scores, which would result in incorrect scoring for the quiz. 
 
-- The correct answer displaying green, to show the user the correct answer after they have selected an incorrect answer. 
+- The correct answer isn't displaying green, to show the user the correct answer after they have selected an incorrect answer. 
 
-- The questions
 
 ## Deployment
 

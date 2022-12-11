@@ -44,7 +44,7 @@ function validation () {
 
 playButton.onclick =() => {
     validation();
-}
+    }
 
 
 function startQuiz () {

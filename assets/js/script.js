@@ -6,10 +6,10 @@ let message = document.getElementById('message');
 let mainContainer = document.getElementById('main-container');
 let showQuestion = document.getElementById('question-area');
 
-let userNameDisplay = document.getElementById('username-display')
+let userNameDisplay = document.getElementById('username-display');
 let heroImage = document.getElementById('hero-outer');
 
-let questionCount = document.getElementById('question-num')
+let questionCount = document.getElementById('question-num');
 
 let option1 = document.getElementById('answer-1');
 let option2 = document.getElementById('answer-2');
@@ -27,20 +27,20 @@ let selectedAnswer;
 
 let user = userName;
 let messageBlank = "*** Please enter a valid name with no spaces or numbers ***";
-let messageShort = "*** Name must be longer than 3 Characters ***"
+let messageShort = "*** Name must be longer than 3 Characters ***";
 
 function validation () {
    let characters = /^[A-Za-z]+$/;
    if (!user.value.match(characters)) {
     message.innerHTML = messageBlank;
-    return false
+    return false;
    } else if (user.value.length <= Number(3)) {
     message.innerHTML = messageShort;
-    return false
+    return false;
    } else if (user.value.length >= Number(3)) {
     startQuiz();
    }
-};
+}
 
 playButton.onclick =() => {
     validation();
@@ -54,7 +54,7 @@ function startQuiz () {
     questionCount.innerText = questionNumber;
 
     getNewQuestion(displayQuestions[currentQuestion]);
-};
+}
 
 
 function getNewQuestion (question) {
@@ -77,13 +77,13 @@ function calculateCorrectAnswer(event) {
     let rightAnswer = displayQuestions[currentQuestion].correctAnswer;
     
 
-    console.log('you selected', displayQuestions[currentQuestion])
+    console.log('you selected', displayQuestions[currentQuestion]);
     if (userAnswer === rightAnswer) {
-        getNewQuestion(displayQuestions[currentQuestion])
+        getNewQuestion(displayQuestions[currentQuestion]);
         incrementScore();
         selectedAnswer.classList.add('correct-answer');
     } else {
-        getNewQuestion(displayQuestions[currentQuestion])
+        getNewQuestion(displayQuestions[currentQuestion]);
         selectedAnswer.classList.add('wrong-answer');
         incrementWrongAnswer();
     }
@@ -99,7 +99,7 @@ function next () {
         getNewQuestion(displayQuestions[currentQuestion]);
         count = 8;
     } else {
-        alert('You have completed the Quiz. Please see your correct and incorrect answers on the screen!')
+        alert('You have completed the Quiz. Please see your correct and incorrect answers on the screen!');
     }
 }
 

@@ -154,7 +154,7 @@ function incrementWrongAnswer() {
 // Questions //
 
 const displayQuestions = [ {
-    question: "Which team plays in Manchester",
+    question: "Which team plays in Manchester?",
     answers :[
         {answer: 'Chelsea'},
         {answer: 'Tottenham'},
@@ -201,7 +201,7 @@ const displayQuestions = [ {
 },
 
 { 
-    question: "Which team plays at Anfield",
+    question: "Which team plays at Anfield?",
     answers :[
     {answer: 'Liverpool'},
     {answer: 'Tottenham'},
@@ -224,7 +224,7 @@ const displayQuestions = [ {
 },
 
 { 
-    question: "Which teams plays at Stamford Bridge",
+    question: "Which teams plays at Stamford Bridge?",
     answers :[
     {answer: 'Chelsea'},
     {answer: 'Tottenham'},

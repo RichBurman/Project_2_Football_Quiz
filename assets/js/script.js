@@ -17,6 +17,7 @@ let option2 = document.getElementById('answer-2');
 let option3 = document.getElementById('answer-3');
 let option4 = document.getElementById('answer-4');
 let nextBtn = document.getElementById('next-button');
+let quizBtn = document.getElementById('quiz-end')
 
 console.log(document.getElementsByClassName("answer-btn"), "<===ans btn")
 
@@ -117,13 +118,17 @@ function next () {
         getNewQuestion(displayQuestions[currentQuestion]);
         count = 8;
     } else {
-        alert('You have completed the Quiz. Please see your correct and incorrect answers on the screen!');
+        quizBtn.classList.remove('hidden')
     }
 }
 
 nextBtn.onclick =() => {
     next();
     removeColors();
+    };
+
+quizBtn.onclick =() => {
+    startQuiz()
     };
 
 

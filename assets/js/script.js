@@ -10,12 +10,15 @@ let userNameDisplay = document.getElementById('username-display');
 let heroImage = document.getElementById('hero-outer');
 
 let questionCount = document.getElementById('question-num');
+const ansBtns = document.querySelectorAll(".answer-btn");
 
 let option1 = document.getElementById('answer-1');
 let option2 = document.getElementById('answer-2');
 let option3 = document.getElementById('answer-3');
 let option4 = document.getElementById('answer-4');
 let nextBtn = document.getElementById('next-button');
+
+console.log(document.getElementsByClassName("answer-btn"), "<===ans btn")
 
 
 let currentQuestion = 0;
@@ -70,6 +73,18 @@ function getNewQuestion (question) {
     option4.onclick = calculateCorrectAnswer;
 }
 
+function enableButtons () {
+    ansBtns.forEach(btn => {
+        btn.disabled = false;
+    })
+}
+
+function disableButtons () {
+    ansBtns.forEach(btn => {
+        btn.disabled = true;
+    })
+}
+
 function calculateCorrectAnswer(event) {
    
     selectedAnswer = event.target;
@@ -82,10 +97,12 @@ function calculateCorrectAnswer(event) {
         getNewQuestion(displayQuestions[currentQuestion]);
         incrementScore();
         selectedAnswer.classList.add('correct-answer');
+        disableButtons ();
     } else {
         getNewQuestion(displayQuestions[currentQuestion]);
         selectedAnswer.classList.add('wrong-answer');
         incrementWrongAnswer();
+        disableButtons ();
     }
 
     startQuiz();
@@ -94,6 +111,7 @@ function calculateCorrectAnswer(event) {
 function next () {
     currentQuestion++;
     questionNumber++;
+    enableButtons();
     if (currentQuestion <= '8') {
         questionCount.innerText = questionNumber;
         getNewQuestion(displayQuestions[currentQuestion]);
@@ -235,4 +253,3 @@ const displayQuestions = [ {
     correctAnswer: "Chelsea",
     incorrectAnswers: ["Manchester United", "Tottenham", "Arsenal"]
 }];
-

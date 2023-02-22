@@ -135,7 +135,7 @@ function visitPage(){
 
 function showUsername() {
     let name = document.getElementById("username").value;
-    document.getElementById("usernameInput").innerHTML = "Hello " + name + " !";
+    document.getElementById("usernameInput").innerHTML = "Hello " + name;
   }
 
 endQuizBtn.onclick =() => {

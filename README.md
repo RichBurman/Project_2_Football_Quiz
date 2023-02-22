@@ -24,19 +24,20 @@ The Football Quiz website is for people who wish to take part in a fun football 
 
 
 - Click to Play! Button
-    - The Click to Play! button allows the user to submit their name. If all the requirements of the Username Entry are met, clicking this button will take the user to the question area where they will be able to take part in the Quiz. 
+    - The Click to Play! button allows the user to submit their name (Username Entry). If all the requirements of the Username Entry are met, clicking this button will take the user to the question area where they will be able to take part in the Quiz. 
 
 
 
 - The Quiz
     - This is where the questions are displayed. Each questions loads 1 at a time and provides 4 answers (which are clickable buttons) for the user to click on to select their answer. 
     - Once the user clicks on a answer, if the answer is correct the box will turn green. However, if the user has clicked on a wrong answer, the answer box will turn red. 
+    - Once the user has selected an answer. All of the question boxes are 'blocked' from being clicked again by the user. 
     - The user will click on the 'next question' button to bring the next question for the user to answer. 
 
 
-
 - Correct and Incorrect Score
-    - This allows the user to see how many of the answers they have answered correctly or incorrectly. It is updated every time the User answers a question. 
+    - This allows the user to see how many of the answers they have answered correctly or incorrectly. 
+    - Each time the user answers a question, depending on whether the user answered the question correctly, this score will be updated by 1, in either the correct or incorrect field. 
 
 
 - Footer
@@ -47,8 +48,8 @@ The Football Quiz website is for people who wish to take part in a fun football 
 
 
 - Message box
-    - Once all 10 questions have been answered by the User, the message box displays to inform the User the following 'You have completed the Quiz. Please see your correct and incorrect answers on the screen!.' 
-    - This informs the user that the Quiz has been completed and no more questions are available for the user to answer. 
+    - Once all 10 questions have been answered by the user and a message and button appears at the bottom of the quiz. 
+    - Using the username the user entered at the start of the quiz, it says 'Hello' to the user. It informs the user that the quiz has been completed and advises to click the button to replay the quiz. This return the user try the quiz again. 
 
     ![Image of Message](assets/images/README/message.jpg)
 
@@ -57,13 +58,11 @@ The Football Quiz website is for people who wish to take part in a fun football 
 
 - Possible Future Features to Implement
 
-    - New question to appear after the previous question has been answered. This would allow the next button to be removed and allows for easier navigation of the website for the User
+    - New question to appear after the previous question has been answered. This would allow the next button to be removed and allows for easier navigation of the website for the user
     - Once the user has selected an answer, the correct answer to show green, even if the user has selected the wrong answer. This would inform the User of the correct answer. 
     - Improved styling of the website. The website has basic styling and could be improved with images and further css styling to enhance the overall look of the website. 
     - A high score page. This would take the user name (which was inputted before starting the Quiz) and place their score out of 10 on a leader board. 
-    - Additional Question pool. A pool of questions, where the website could randonly select questions to use in the quiz, so each time the user starts the quiz, they will face a different order of questions. This would allow the user to come back to the quiz and face different questions each time for a new challenge. 
-    - Disabling the answer buttons after an answer has been selected. This would prevent the user from selecting multiple answers on a question. 
-    - Restart/Play Again button. This would be a button or option to appear at the end of the quiz to allow the User to return the start of the quiz questions again and have another attempt of completing the quiz. 
+    - Additional Question pool. A pool of questions, where the site could randomly select questions to use in the quiz, so each time the user starts the quiz, they will face a different order of questions.  This would allow the user to come back to the quiz and face different questions each time for a new challenge. 
 
 
 ## Testing
@@ -118,10 +117,6 @@ The Football Quiz website is for people who wish to take part in a fun football 
 ![Lighthouse score](assets/images/README/Lighthouse_Project2.jpg)
 
 ### Unfixed Bugs
-
-- Images that are used on the site are rather large in size and they could be adjusted to allow for faster loading times on those with a slower internet connection
-
-- Disabling the answer buttons after an answer has been selected. The user can select another answer after selecting their first answer this adds to the correct or incorrect scores, which would result in incorrect scoring for the quiz. 
 
 - The correct answer isn't displaying green, to show the user the correct answer after they have selected an incorrect answer. 
 

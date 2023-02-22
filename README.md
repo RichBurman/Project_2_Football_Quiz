@@ -2,7 +2,7 @@
 
 # Football Quiz
 
-The Football Quiz website is for people who wish to take part in a fun football quiz game. The website allows users to enter their name and answer 10 football related questions to test their football knowledge. It is a exciting website for football fans around the world to test their knowledge, whilst trying to achieve 10 correct answers out of 10! 
+The Football Quiz website is for people who wish to take part in a fun football themed quiz game. The website allows users, after entering their name, to test their football knowledge by answering 10 football related questions. It is an exciting website for football fans around the world, with the main aim of trying to achieve 10 correct answers out of 10! 
 
 [Here is the live version of the project](https://richburman.github.io/Project_2_Football_Quiz/)
 
@@ -10,24 +10,25 @@ The Football Quiz website is for people who wish to take part in a fun football 
 
 ## How it works
 
-- The Football Quiz takes the user to a page which allows the user to enter a valid username before gaining access to the quiz. 
+- The Football Quiz takes the user to a page which allows them to enter a valid username before gaining access to the quiz. 
 - Once the user has entered a valid username, the user clicks on the 'Click to Play' button, which takes the user to the question page. 
-- The question page contents the following:
+- The question page contains the following:
     - A Question
-    - Question Number
-    - Four answer buttons
+    - The question Number
+    - Muliple choice answer consisting of four answer buttons
     - Next Question button
-    - Scoring 
-        - Displays how many answers have been answered correctly
-        - Display how many answers have been answered incorrectly
-- Once the user clicks on a button to answer a question, the button will respond to the user in the following way:
+    - Score Tally
+        - Displays how many answers have been answered correctly by the user
+        - Display how many answers have been answered incorrectly by the user
+- Once the user clicks on a button to answer a question, the answer button will respond to the user in the following way:
     - The button will turn red if the answer is incorrect
     - The button will turn green if the answer is correct
+    - The other multiple choice answer buttons will be greyed out to ensure the validity of the quiz. 
 - The scoring area will be updated after the user has clicked on an answer in the following way:
     - If the user has selected the correct answer, the correct score will increase by 1
     - If the user has selected an incorrect answer, the incorrect score will increase by 1
-- Once the user has completed all 10 questions, the message and new button will appear on the screen. 
-    - The message informs the user (Using their entered username) that the quiz has been completed and to click on the button to replay the quiz. 
+- Once the user has completed all 10 questions, a message to advise that quiz has ended is displayed and a new 'replay the quiz' button will appear on the screen. 
+    - The message informs the user (using their entered username) that the quiz has been completed and to click on the button to replay the quiz. 
 
 
 
@@ -36,15 +37,15 @@ The Football Quiz website is for people who wish to take part in a fun football 
 <img src="./assets/images/README/index_page.jpg" width="800" height="500" alt="Image Landing Page">
 
 ### The landing page and hero image
-- The landing includes a hero image and header which allows the user to see what the website is about. The image includes an animation which should draw the user into the page, whilst the header details clearly what the website is about. 
+- The landing page includes a hero image and header to advise all users as to the content and theme of the website. The image includes an animation that entices the user to the page, whilst the header details clearly what the website is about. 
 
 ### Username Entry
 - Featured on the Index Page. 
 - This allows the user to input their name before they can gain access to the Quiz questions. 
-- Users are only able to submit a name that is made up only of 'A-Z' or 'a-z' characters otherwise the following message will pop up on the screen "Please enter a valid name with no spaces or numbers" and not allow the name to be accepted until it meets the requirements.  
-- Users are not able to submit a name that is under 3 characters in length. The following message will pop up on the screen "Name must be longer than 3 Characters" and not allow the name to be accepted until it meets the requirements.  
-- Users are not able to submit blank spaces. 
-- Once a user has entered a name that meets the requirements, it is accepted and the User is taken to the Quiz questions. This checks for validation of the username to ensure the correct information is entered into the website. 
+- Users are only able to submit a user name, consisting of 'A-Z' or 'a-z' characters, otherwise the following prompt message will appear on the screen "Please enter a valid name with no spaces or numbers" and not allow the username to be accepted until it meets the requirements.  
+- Users are not able to submit a name that is less than 3 characters in length. The following message will appear on the screen "Name must be longer than 3 Characters" and not allow the username to be accepted until it meets the requirements.  
+- Users are not able to submit blank spaces or include spaces within the username. 
+- Once a user has entered a username that meets the requirements, this is accepted and the user is granted access to the quiz questions. 
 
 
 ### Click to Play! Button
@@ -54,15 +55,15 @@ The Football Quiz website is for people who wish to take part in a fun football 
 <img src="./assets/images/README/quiz_page.png" width="600" height="500" alt="Image Quiz Page"> 
 
 ### The Quiz
-- This is where the questions are displayed. Each questions loads 1 at a time and provides 4 answers (which are clickable buttons) for the user to click on to select their answer. 
-- Once the user clicks on a answer, if the answer is correct the box will turn green. However, if the user has clicked on a wrong answer, the answer box will turn red. 
-- Once the user has selected an answer. All of the question boxes are 'blocked' from being clicked again by the user. 
-- The user will click on the 'next question' button to bring the next question for the user to answer. 
+- This is where the questions are displayed. Each question is loaded 1 at a time and provides 4 multiple choice answers, displayed within clickable buttons, for the user to click on to select their answer. 
+- Once the user clicks on an answer, if the answer is correct the box will turn green. However, if the user has clicked on a wrong answer, the answer box will turn red. 
+- Once the user has selected an answer. All of the remaining answer boxes are 'blocked' from being clicked by the user. This also ensure that only one answer can be submitted per question. 
+- The user will click on the 'next question' button to bring the next question for them to answer. 
 
 
 - Correct and Incorrect Score
-    - This allows the user to see how many of the answers they have answered correctly or incorrectly. 
-    - Each time the user answers a question, depending on whether the user answered the question correctly, this score will be updated by 1, in either the correct or incorrect field. 
+    - This allows the user to see how many of the questions they have answered both correctly and incorrectly. 
+    - Each time the user answers a question their score will be updated by 1, in either the correct or incorrect field. 
 
 
 - Footer
@@ -72,13 +73,11 @@ The Football Quiz website is for people who wish to take part in a fun football 
 <img src="./assets/images/README/completed_quiz_full.png" width="600" height="500" alt="Image Completed Quiz Page"> 
 
 ### Message box
-- Once all 10 questions have been answered by the user and a message and button appears at the bottom of the quiz. 
-- Using the username the user entered at the start of the quiz, it says 'Hello' to the user. It informs the user that the quiz has been completed and advises to click the button to replay the quiz. This returns the user to the start website to try the quiz again.
+- Once all 10 questions have been answered by the user a message to advise of the end of the quiz is displayed and a 'replay the quiz' button appears at the bottom of the page. 
+- Displaying the username entered at the start of the quiz, this says 'Hello' followed by the username to provide a personalised experience for the user. This also informs the user that the quiz has been completed and advises to click the button to replay the quiz. This returns the user to the start of the website to try the quiz again.
 
 <img src="./assets/images/README/completed_quiz.png" width="600" height="200" alt="Image Completed Quiz Message"> 
 
-
-   
 
 ## Possible Future Features to Implement
 

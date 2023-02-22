@@ -18,6 +18,7 @@ let option3 = document.getElementById('answer-3');
 let option4 = document.getElementById('answer-4');
 let nextBtn = document.getElementById('next-button');
 let quizBtn = document.getElementById('quiz-end')
+let endQuizBtn = document.getElementById('end-quiz-button')
 
 console.log(document.getElementsByClassName("answer-btn"), "<===ans btn")
 
@@ -127,11 +128,15 @@ nextBtn.onclick =() => {
     removeColors();
 };
 
-function restartQuiz() {
-    quizBtn.onclick =() => {
-        startQuiz();
-        }
+function visitPage(){
+    window.location='https://richburman.github.io/Project_2_Football_Quiz';
+}
+
+
+endQuizBtn.onclick =() => {
+    visitPage();
 };
+
 
 
 // Remove colors//

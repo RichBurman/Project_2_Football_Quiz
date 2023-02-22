@@ -120,6 +120,7 @@ function next () {
         count = 8;
     } else {
         quizBtn.classList.remove('hidden')
+        showUsername();
     }
 }
 
@@ -129,9 +130,13 @@ nextBtn.onclick =() => {
 };
 
 function visitPage(){
-    window.location='https://richburman.github.io/Project_2_Football_Quiz';
+    window.location='https://richburman.github.io/Project_2_Football_Quiz/';
 }
 
+function showUsername() {
+    let name = document.getElementById("username").value;
+    document.getElementById("usernameInput").innerHTML = "Hello " + name + " !";
+  }
 
 endQuizBtn.onclick =() => {
     visitPage();

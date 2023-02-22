@@ -51,6 +51,7 @@ playButton.onclick =() => {
     validation();
     }
 
+// Start Quiz //
 
 function startQuiz () {
     userNameDisplay.classList.add('hidden');
@@ -109,6 +110,8 @@ function calculateCorrectAnswer(event) {
 
     startQuiz();
 }
+
+// Functions to assist with effective nagivation //
 
 function next () {
     currentQuestion++;
@@ -178,7 +181,7 @@ const displayQuestions = [ {
 },
 
 { 
-    question: "What team plays in blue?",
+    question: "What team plays in the color blue?",
     answers :[
     {answer: 'Chelsea'},
     {answer: 'Tottenham'},
@@ -190,7 +193,7 @@ const displayQuestions = [ {
 },
 
 { 
-    question: "What team plays in white?",
+    question: "What team plays in the color white?",
     answers :[
     {answer: 'Chelsea'},
     {answer: 'Tottenham'},
@@ -224,7 +227,7 @@ const displayQuestions = [ {
     incorrectAnswers: ["Manchester United", "Tottenham", "Arsenal"]
 },
 
-{ question: "Which team plays in red and white?",
+{ question: "Which team plays in the colors red and white?",
     answers :[
     {answer: 'Chelsea'},
     {answer: 'Tottenham'},
@@ -260,7 +263,7 @@ const displayQuestions = [ {
 },
 
 {
-    question: "Which team plays in blue?",
+    question: "Which team plays in the color blue?",
     answers :[
         {answer: 'Chelsea'},
         {answer: 'Tottenham'},

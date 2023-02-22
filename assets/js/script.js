@@ -125,11 +125,13 @@ function next () {
 nextBtn.onclick =() => {
     next();
     removeColors();
-    };
+};
 
-quizBtn.onclick =() => {
-    startQuiz()
-    };
+function restartQuiz() {
+    quizBtn.onclick =() => {
+        startQuiz();
+        }
+};
 
 
 // Remove colors//

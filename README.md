@@ -81,7 +81,7 @@ The Football Quiz website is for people who wish to take part in a fun football 
 
 ## Possible Future Features to Implement
 
-- New question to appear after the previous question has been answered. This would allow the next button to be removed and allows for easier navigation of the website for the user
+- New question to appear automatically after the previous question has been answered. This would allow the next button to be removed and allows for easier navigation of the website for the user.
 - Once the user has selected an answer, the correct answer to show green, even if the user has selected the wrong answer. This would inform the User of the correct answer. 
 - Improved styling of the website. The website has basic styling and could be improved with images and further css styling to enhance the overall look of the website. 
 - A high score page. This would take the user name (which was inputted before starting the Quiz) and place their score out of 10 on a leader board. 
@@ -113,7 +113,7 @@ I have manually tested this project by undetaking the following steps:
 
 - I have tested the 'Next Question' button to ensure that once clicked it loads the next question for the user on the page. 
 
-- I have tested the 'Retry Quiz' button to ensure that once clicked it send the user to the start of the quiz, ready to start the quiz again. 
+- I have tested the 'Retry the Quiz' button to ensure that once clicked it sends the user to the start of the quiz, ready to start the quiz again. 
 
 
 - HTML - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/)
@@ -184,7 +184,7 @@ I have manually tested this project by undetaking the following steps:
 ### Fixed Bugs
 
 - The user is now able to return to the start of the quiz, once they have completed all the questions. Previously, once the user had completed all the questions, the user was unable to nagivate from this page. 
-- The username entered at the start of the quiz is display at the end of the quiz which improves the experience of the quiz for the user. Previously, the username was entered and this not brought up in the quiz again. 
+- The username entered at the start of the quiz is displayed at the end of the quiz which improves the experience of the quiz for the user. Previously, the username was entered and this not brought up in the quiz again. 
 - The answer buttons on the quiz are now 'blocked out' once a user has clicked and selected an answer to a question. This prevents the user from selecting more than one answer. Previously, the user was able to select multiply answers, which affected the validity of the quiz and the scoring system. 
 
 ### Unfixed Bugs

@@ -136,7 +136,7 @@ padding: 0;
 }
 
 .answer-btn {
-    padding: 20px;
+    padding: 30px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -178,6 +178,10 @@ padding: 0;
 
 footer {
     background-color: #3a3a3a;
+    position: fixed;
+    bottom: 0;
+    min-width: 100%;
+
 }
 footer a {
     color: #fff;

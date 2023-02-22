@@ -17,10 +17,10 @@ let option2 = document.getElementById('answer-2');
 let option3 = document.getElementById('answer-3');
 let option4 = document.getElementById('answer-4');
 let nextBtn = document.getElementById('next-button');
-let quizBtn = document.getElementById('quiz-end')
-let endQuizBtn = document.getElementById('end-quiz-button')
+let quizBtn = document.getElementById('quiz-end');
+let endQuizBtn = document.getElementById('end-quiz-button');
 
-console.log(document.getElementsByClassName("answer-btn"), "<===ans btn")
+console.log(document.getElementsByClassName("answer-btn"), "<===ans btn");
 
 
 let currentQuestion = 0;
@@ -49,7 +49,7 @@ function validation () {
 
 playButton.onclick =() => {
     validation();
-    }
+};
 
 // Start Quiz //
 
@@ -79,13 +79,13 @@ function getNewQuestion (question) {
 function enableButtons () {
     ansBtns.forEach(btn => {
         btn.disabled = false;
-    })
+    });
 }
 
 function disableButtons () {
     ansBtns.forEach(btn => {
         btn.disabled = true;
-    })
+    });
 }
 
 function calculateCorrectAnswer(event) {
@@ -122,7 +122,7 @@ function next () {
         getNewQuestion(displayQuestions[currentQuestion]);
         count = 8;
     } else {
-        quizBtn.classList.remove('hidden')
+        quizBtn.classList.remove('hidden');
         showUsername();
     }
 }

@@ -17,7 +17,8 @@ The Football Quiz website is for people who wish to take part in a fun football 
     - Featured on the Index Page. 
     - This allows the user to input their name before they can gain access to the Quiz questions. 
     - Users are only able to submit a name that is made up only of 'A-Z' or 'a-z' characters otherwise the following message will pop up on the screen "Please enter a valid name with no spaces or numbers" and not allow the name to be accepted until it meets the requirements.  
-    - Users are not able to submit a name that is under 3 characters in length as the following message will pop up on the screen "Name must be longer than 3 Characters" and not allow the name to be accepted until it meets the requirements.  
+    - Users are not able to submit a name that is under 3 characters in length. The following message will pop up on the screen "Name must be longer than 3 Characters" and not allow the name to be accepted until it meets the requirements.  
+    - Users are not able to submit blank spaces. 
     - Once a user has entered a name that meets the requirements, it is accepted and the User is taken to the Quiz questions. 
     This checks for validation of the username to ensure the correct information is entered into the website. 
 
